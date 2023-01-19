@@ -1,0 +1,91 @@
+.mobile-navbar {
+    background: linear-gradient(121.83deg, #472876 14.64%, #2d1e61 85.55%);
+    border-radius: 0 0 14px 0;
+    box-shadow: 0 4px 12px rgb(82 77 209 / 32%);
+    position: fixed;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transition: all .25s ease-in;
+    -webkit-transition: all .25s ease-in;
+    z-index: 30;
+}
+
+// .white-navbar {
+//     background: linear-gradient(304.92deg, #eff0f6 24.56%, #fff 79.94%) !important;
+// }
+// .hamburgermenu {}
+
+.hamburger-react {
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer !important;
+    height: 45px !important;
+    right: 12px;
+    // top: 12px;
+    transform: rotate(0deg) !important;
+    -webkit-transform: rotate(0deg);
+    transition: .5s ease-in-out !important;
+    -webkit-transition: .5s ease-in-out;
+    width: 45px;
+    z-index: 23;
+}
+
+.hamburger-react.open {
+    background: inherit;
+    border: 1px solid #f7f7fc;
+}
+
+.menu {
+    border-radius: 0 0 20px 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateY(-700px);
+    -webkit-transform: translateY(-700px);
+    transition: all .3s, background 0s;
+    -webkit-transition: all .3s, background 0s;
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    width: 100%;
+    z-index: 22;
+}
+
+#bgmenu {
+    background: linear-gradient(304.92deg, #554fd8 24.56%, #7770e0 79.94%);
+    border-radius: 0 0 14px 0;
+}
+
+.openMenu {
+    box-shadow: 0 0 0 1000px rgb(0 0 0 / 50%);
+    transform: translateY(70px);
+    -webkit-transform: translateY(70px);
+}
+
+#bgmenu {
+    background: linear-gradient(304.92deg, #554fd8 24.56%, #7770e0 79.94%);
+    border-radius: 0 0 14px 0;
+}
+
+
+.menu ul li a {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+/* .menu ul li:after {
+    content: "";
+    display: block;
+    background: #9993e7;
+    height: 2px;
+    margin: 0;
+    width: 1000%;
+    margin-left: -22px;
+    margin-top: 10px;
+} */
+
+.menu .mobile-hr {
+    background: #fff;
+    height: 2px;
+    margin: 0;
+    width: 100%;
+}

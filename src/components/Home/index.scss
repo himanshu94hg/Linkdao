@@ -1,0 +1,244 @@
+.main-wrapper {
+    gap: 70px;
+    padding-bottom: 5rem;
+}
+
+
+@media screen and (max-width: 786px) {
+    .main-wrapper {
+        overflow-x: clip;
+        gap: 32px;
+    }
+
+}
+
+.main-hero {
+    background: linear-gradient(183deg, #472876 30%, #2d1e61 70%);
+    border-radius: 0 0 30px 30px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+
+    .heading {
+        // background-image: url("../../../assets/fallingStars.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: 800px;
+
+        .col-5 {
+            gap: 15px;
+        }
+
+        .filled-orange-btn {
+            width: 36%;
+            height: 40px;
+        }
+    }
+}
+
+
+
+.sliderwrapper {
+    height: 161px;
+    background: url('../../assets/carouselbg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+
+    .slick-list {
+        margin: 0;
+    }
+
+    .rowwrapper {
+        padding: 20px 16px;
+    }
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.metaverse {
+    background: linear-gradient(183deg, #472876 30%, #2d1e61 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.digits {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 33px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding-right: 30px;
+
+    span {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 23px;
+    }
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    background: rgba(150, 100, 255, 1);
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.dot:nth-child(2) {
+    height: 16px;
+    width: 16px;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 900px) {
+    .main-hero {
+        padding-top: 50px;
+
+        .heading {
+            min-height: 854px;
+        }
+    }
+
+
+
+
+    h1 {
+        font-size: 28px !important;
+        margin: 0;
+    }
+
+    .list-card {
+        img {
+            width: 40px;
+        }
+    }
+
+    .leftcol {
+        .outline-btn {
+            width: 100% !important;
+        }
+    }
+}
+
+.gutterx {
+    --bs-gutter-x: 0 !important;
+}
+
+.chainlink-wrapper {
+    align-items: flex-end;
+    background: #eff0f6;
+    border-radius: 0 0 56px 56px;
+    bottom: 75px;
+    display: flex;
+    min-height: 215px px;
+    padding-bottom: 35px;
+    position: relative;
+}
+
+@media only screen and (max-width: 1399px) {
+    .chainlink-wrapper {
+        bottom: 25px !important;
+    }
+}
+
+.pin {
+    left: -40px;
+    position: absolute;
+}
+
+.marginhome {
+    @media (max-width:500px) {
+        margin: auto;
+    }
+
+    @media (max-width:900px) {
+        margin: auto;
+    }
+}
+
+.fs-50 {
+    @media (min-width:768px) {
+        font-size: 48px;
+    }
+}
+
+.cAddress {
+    @media (max-width:414px) {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 64%;
+        display: block;
+
+    }
+}
+
+.custom-tooltip {
+    background: transparent;
+    border: none;
+    height: auto;
+    color: #fff;
+
+    @media (min-width:769px) {
+        &::before {
+            content: '';
+            margin-top: -31px;
+            margin-left: -45px;
+            position: absolute;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            // border-bottom: 5px solid rgba(0, 0, 0, .72);
+
+        }
+
+        &:after {
+            content: 'Copy to Clipboard';
+            display: none;
+            position: absolute;
+            z-index: 9999;
+            margin-top: -65px;
+
+            width: 130px;
+            height: 36px;
+            margin-left: -45px;
+
+            color: rgba(30, 254, 254, 0.9);
+            font-size: 12px;
+            line-height: 36px;
+            text-align: center;
+            border: 1px solid rgba(30, 254, 254, 0.6);
+            background: rgba(0, 0, 0, .2);
+            border-radius: 10px;
+        }
+
+        &:hover {
+
+
+            &:before,
+            &:after {
+                display: block;
+            }
+        }
+
+        &:active,
+        &:focus {
+            outline: none;
+
+            &:after {
+                content: 'Copied!';
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,115 @@
+* {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.MuiFormHelperText-root {
+  color: #d32f2f !important;
+}
+
+.filled-btn {
+  color: #f7f7fc;
+  background: linear-gradient(183deg, #472876 30%, #2d1e61 70%);
+  border-radius: 10px;
+  background-size: 300%;
+  background-position: 0 0;
+  height: 40px;
+  padding: 0 24px;
+  transition: all ease 0.4s;
+  -webkit-transition: all ease 0.4s;
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  font-weight: 500
+}
+
+.filled-btn:hover {
+  color: white !important;
+  background-position: 100% 0 !important;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.09) !important;
+}
+
+
+
+.filled-orange-btn {
+  background: linear-gradient(276.34deg, #E04C24 0%, #F8845B 100%);
+  background: -webkit-linear-gradient(276.34deg, #E04C24 0%, #F8845B 100%);
+
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  color: white !important;
+  background-size: 300%;
+  padding: 0 20px;
+  height: 40px;
+
+}
+
+.filled-orange-btn:hover {
+  background: linear-gradient(276.34deg, #E04C24 0%, #F8845B 100%) !important;
+  background: -webkit-linear-gradient(276.34deg, #E04C24 0%, #F8845B 100%) !important;
+
+}
+
+.filled-orange-btn:focus {
+  background: linear-gradient(276.34deg, #F8845B 0%, #F8845B 100%) !important;
+  background: -webkit-linear-gradient(276.34deg, #F8845B 0%, #F8845B 100%) !important;
+
+  border: 3px solid #FFDBCF !important;
+  outline: #FFDBCF !important;
+}
+
+.outline-btn {
+  color: #554fd8;
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid #554fd8;
+  font-weight: 500;
+  border-radius: 10px !important;
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  padding: 0 24px;
+  // display: flex !important;
+  // align-items: center;
+  transition: all .5s;
+
+}
+
+.outline-btn:hover {
+  color: #554fd8 !important;
+  border-color: #3e3aa5 !important;
+  box-shadow: 0px 8px 18px rgba(85, 79, 216, 0.4);
+}
+
+.outline-btn:focus {
+  border-color: #554fd8 !important;
+}
+
+
+.tymodal {
+  border: 6px solid #AAA5EB;
+  box-shadow: 0px 60px 120px #14142a1f;
+  border-radius: 56px 0px;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+
+.hidescroll {
+  overflow: hidden;
+  pointer-events: none;
+}
+
+::file-selector-button {
+  visibility: hidden;
+}
+
+
+@media screen and (max-width: 820px) {
+  html {
+    overflow-x: hidden !important;
+  }
+
+  body {
+    overflow-x: hidden !important;
+  }
+}

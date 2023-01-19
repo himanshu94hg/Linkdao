@@ -1,0 +1,141 @@
+.comet {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite, infinite;
+    animation-iteration-count: infinite, infinite;
+    -webkit-animation-name: comet-fall;
+    animation-name: comet-fall;
+    -webkit-animation-play-state: running, running;
+    animation-play-state: running, running;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    animation-timing-function: linear, ease-in-out;
+    cursor: default;
+    position: absolute;
+    top: 10%;
+    -webkit-user-select: none;
+    user-select: none;
+    z-index: 0;
+    opacity: 0.3;
+
+    /*  @media (max-width:500px) {
+
+        animation: none !important;
+        -webkit-animation: none !important;
+
+
+    } */
+}
+
+.comet:first-of-type {
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay: 1s, 1s;
+    left: 1%;
+}
+
+.comet:nth-of-type(2) {
+    -webkit-animation-delay: 3s, .5s;
+    animation-delay: 3s, .5s;
+    left: 20%;
+
+    @media (max-width:500px) {
+
+        top: 141px;
+    }
+}
+
+.comet:nth-of-type(3) {
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay: 4s, 2s;
+    left: 30%;
+
+    @media (max-width:500px) {
+        left: 30%;
+        top: 440px;
+    }
+}
+
+.comet:nth-of-type(4) {
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay: 2s, 2s;
+    left: 40%;
+}
+
+.comet:nth-of-type(5) {
+    -webkit-animation-delay: 4s, 3s;
+    animation-delay: 4s, 3s;
+    left: 50%;
+
+    @media (max-width:500px) {
+        left: 14%;
+        top: 600px;
+    }
+}
+
+.comet:nth-of-type(6) {
+    -webkit-animation-delay: 3s, 2s;
+    animation-delay: 3s, 2s;
+    left: 60%;
+
+    @media (max-width:500px) {
+        left: 22%;
+    }
+}
+
+.comet:nth-of-type(7) {
+    -webkit-animation-delay: 2.5s, 1s;
+    animation-delay: 2.5s, 1s;
+    left: 70%;
+
+    @media (max-width:500px) {
+        left: 58%;
+    }
+}
+
+.comet:nth-of-type(8) {
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay: 1s, 0s;
+    left: 80%;
+}
+
+.comet:nth-of-type(9) {
+    -webkit-animation-delay: 3s, 1.5s;
+    animation-delay: 3s, 1.5s;
+    left: 90%;
+}
+
+.comet:nth-of-type(10) {
+    -webkit-animation-delay: 3s, 1s;
+    animation-delay: 3s, 1s;
+    left: 90%;
+}
+
+
+.comet img {
+    scale: 2.5;
+}
+
+@keyframes comet-fall {
+    0% {
+        top: 0px;
+    }
+
+    20% {
+        top: 175px;
+    }
+
+    40% {
+        top: 350px;
+    }
+
+    60% {
+        top: 525px;
+    }
+
+    80% {
+        top: 700px;
+    }
+
+    100% {
+        top: 875px;
+    }
+}
