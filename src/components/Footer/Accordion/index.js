@@ -28,20 +28,9 @@ const Accordion = () => {
                 className="text-white text-decoration-none footer-type-link"
                 href="/"
               >
-                <h5>Our team</h5>
-              </a>
-              <a
-                className="text-white text-decoration-none footer-type-link"
-                href="/"
-              >
                 <h5>Our partners</h5>
               </a>
-              <a
-                className="text-white text-decoration-none footer-type-link"
-                href="/"
-              >
-                <h5>Brand</h5>
-              </a>
+
               <a
                 className="text-white text-decoration-none footer-type-link"
                 href="/"
@@ -102,18 +91,7 @@ const Accordion = () => {
                 >
                   <h5>LKD Tools</h5>
                 </a>
-                <a
-                  className="text-white text-decoration-none footer-type-link"
-                  href="/"
-                >
-                  <h5>Governance</h5>
-                </a>
-                <a
-                  href="/"
-                  className="text-white text-decoration-none footer-type-link"
-                >
-                  <h5>Bridge</h5>
-                </a>
+
                 <a
                   className="text-white text-decoration-none footer-type-link"
                   href="/"
@@ -124,15 +102,7 @@ const Accordion = () => {
                   className="text-white text-decoration-none footer-type-link"
                   href="/"
                 >
-                  <h5>iLKD Token</h5>
-                </a>
-                <a
-                  className="text-white text-decoration-none footer-type-link"
-                  href="/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <h5>Metaverse</h5>
+                  <h5>LKD Token</h5>
                 </a>
               </div>
             </div>
@@ -174,90 +144,19 @@ const Accordion = () => {
               >
                 <h5>How to Stake</h5>
               </a>
-              <a
+              {/* <a
                 href="/"
                 rel="noreferrer"
                 target="_blank"
                 className="text-white text-decoration-none footer-type-link"
               >
                 <h5>How to Farm</h5>
-              </a>
-              <a
-                href="/"
-                rel="noreferrer"
-                target="_blank"
-                className="text-white text-decoration-none footer-type-link"
-              >
-                <h5>How to use Buyback</h5>
-              </a>
-              <a
-                href="/"
-                rel="noreferrer"
-                target="_blank"
-                className="text-white text-decoration-none footer-type-link"
-              >
-                <h5>How to use the Vault</h5>
-              </a>
-              <a
-                href="/"
-                rel="noreferrer"
-                target="_blank"
-                className="text-white text-decoration-none footer-type-link"
-              >
-                <h5>How to use LKD Tools</h5>
-              </a>
-              <a
-                href="/"
-                rel="noreferrer"
-                target="_blank"
-                className="text-white text-decoration-none footer-type-link"
-              >
-                <h5>How to Bridge</h5>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
         <hr />
-        <div className="col-12 col-lg-3 text-white d-flex flex-column gap-3 px-0 py-3">
-          <div
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseThree"
-            aria-expanded="true"
-            aria-controls="collapseThree"
-          >
-            <div className="d-flex align-items-center justify-content-between">
-              <h4 className="fw-normal">Anouncements</h4>
-              <IoIosArrowForward />
-            </div>
-          </div>
-          <div
-            id="collapseThree"
-            className="collapse"
-            aria-labelledby="headingThree"
-            data-bs-parent="#accordionFooter"
-          >
-            <div className="d-flex flex-column gap-3">
-              <a
-                className="text-white text-decoration-none footer-type-link"
-                href="/"
-              >
-                <h5>Latest anouncements</h5>
-              </a>
-              <a
-                className="text-white text-decoration-none footer-type-link"
-                href="/"
-              >
-                <h5>Latest events</h5>
-              </a>
-              <a
-                className="text-white text-decoration-none footer-type-link"
-                href="/"
-              >
-                <h5>Press</h5>
-              </a>
-            </div>
-          </div>
-        </div>
+
         <hr />
         <div className="d-flex flex-row gap-3 position-relative mt-3">
           <a

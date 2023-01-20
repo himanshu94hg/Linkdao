@@ -31,7 +31,7 @@ const ToolsPage = () => {
                 data-aos-duration="1000"
                 className="aos-init aos-animate"
               >
-                <h1 className="metaverse">LKD Tools</h1>
+                <h1 className="metaverse">LINKDAO</h1>
                 <h1>Powerful dApps</h1>
               </div>
               <div
@@ -82,13 +82,13 @@ const ToolsPage = () => {
               href="https://app.linkdao.network/"
               target="_blank"
               rel="noreferrer"
-              className="btn d-flex align-items-center justify-content-center outline-btn m-md-auto m-sm-auto m-lg-0 aos-init aos-animate"
+              className="btn d-flex align-items-center justify-content-center filled-btn m-md-auto m-sm-auto m-lg-0 aos-init aos-animate"
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-duration="1000"
               style={{ width: "fit-content" }}
             >
-              Go to LKD Tools
+              Launch App
               <span style={{ marginLeft: "15px" }}>
                 <HiOutlineArrowNarrowRight />
               </span>

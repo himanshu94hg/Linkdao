@@ -61,6 +61,10 @@
             color: rgba(85, 79, 216, 1);
             padding: 5px 20px;
 
+            &:hover {
+                color: #53e4e1;
+            }
+
             @media only screen and (max-width: 1399px) {
                 padding: 5px 10px;
 
@@ -123,7 +127,7 @@
     }
 
     .navlink:hover {
-        color: #57b6ab !important;
+        color: #53e4e1 !important;
     }
 
     .highlight:hover {

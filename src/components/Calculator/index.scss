@@ -16,7 +16,7 @@
     left: 23%;
     top: 10%;
     z-index: -1;
-    opacity: 0.8;
+    opacity: 0.5;
 
     @media screen and (max-width: 576px) {
 
@@ -231,7 +231,11 @@
 
 .pool {
     .btn {
-        border: 1px solid #F8845B;
+        border: 1px solid #2d1e61;
+        border-radius: 10px;
+        color: #2d1e61;
+        font-weight: 400;
+        font-size: 1rem;
 
         &:active,
         &:focus {
@@ -241,8 +245,15 @@
 }
 
 .activeBtn {
-    background: linear-gradient(276.34deg, #F8845B 0%, #F8845B 100%) !important;
-    color: #fff;
+    background: linear-gradient(183deg, #472876 30%, #2d1e61 70%) !important;
+    color: #fff !important;
+    border: none !important;
+
+    &:active,
+    &:focus {
+        color: #fff;
+    }
+
     // box-shadow: 0 9px 30px rgb(81 222 219 / 89%);
 }
 
@@ -250,14 +261,17 @@
 .daysBtn {
     .btn {
         font-size: 9.8px;
-        border: 1px solid #F8845B;
-        padding: 0px 4px;
+        border: 1px solid #2d1e61;
+        color: #2d1e61;
+        padding: 0px 3px;
         height: 30px;
+        width: 100%;
 
         &:active,
         &:focus {
-            background: linear-gradient(276.34deg, #F8845B 0%, #F8845B 100%) !important;
+            background: linear-gradient(183deg, #472876 30%, #2d1e61 70%) !important;
             color: #fff;
+            border: none;
         }
     }
 }

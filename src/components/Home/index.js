@@ -44,7 +44,7 @@ const Home = () => {
                           className="cAddress"
                           style={{
                             textDecoration: "none",
-                            color: "#1efefe",
+                            color: "#53e4e1",
                           }}
                         >
                           0xaF027427DC6d31A3e7e162A710a5Fe27e63E275F
@@ -92,7 +92,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container-lg d-flex justify-content-center px-0 ">
+        <div className="container-lg d-flex justify-content-center mb-4 mb-lg-0 mt-5">
           <Calculator />
         </div>
 
@@ -100,7 +100,7 @@ const Home = () => {
           <LKDToken />
         </div>
 
-        <div className="container-lg d-flex justify-content-center px-0 ">
+        <div className="container-lg d-flex justify-content-center mb-4 mb-lg-0 ">
           <ToolsPage />
         </div>
 

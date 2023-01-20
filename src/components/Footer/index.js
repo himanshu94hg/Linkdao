@@ -50,38 +50,7 @@ const Footer = () => {
                 </div>
               </a>
             </div>
-            {/* <div className="col-4 col-lg">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="text-decoration-none"
-                href="https://discord.gg/lkdcaws"
-              >
-                <div
-                  className="d-flex flex-row justify-content-start justify-content-lg-center align-items-center"
-                  style={{ gap: "5px" }}
-                >
-                  <img src={Discord} alt="" />
-                  <p className="mb-0">Discord</p>
-                </div>
-              </a>
-            </div> */}
-            {/* <div className="col-4 col-lg">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="text-decoration-none"
-                href="https://www.instagram.com/lkd.finance/"
-              >
-                <div
-                  className="d-flex flex-row justify-content-start justify-content-lg-center align-items-center"
-                  style={{ gap: "5px" }}
-                >
-                  <img src={Instagram} alt="" />
-                  <p className="mb-0">Instagram</p>
-                </div>
-              </a>
-            </div> */}
+
             <div className="col-4 col-lg">
               <a
                 target="_blank"
@@ -98,38 +67,7 @@ const Footer = () => {
                 </div>
               </a>
             </div>
-            {/*  <div className="col-4 col-lg">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="text-decoration-none"
-                href="https://www.youtube.com/c/DeFiYieldProtocol/featured"
-              >
-                <div
-                  className="d-flex flex-row justify-content-start justify-content-lg-center align-items-center"
-                  style={{ gap: "5px" }}
-                >
-                  <img src={Youtube} alt="" />
-                  <p className="mb-0">Youtube</p>
-                </div>
-              </a>
-            </div> */}
-            {/*  <div className="col-4 col-lg">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                className="text-decoration-none"
-                href="https://www.linkedin.com/company/defi-yield-protocol"
-              >
-                <div
-                  className="d-flex flex-row justify-content-start justify-content-lg-center align-items-center"
-                  style={{ gap: "5px" }}
-                >
-                  <img src={Linkedin} alt="" />
-                  <p className="mb-0">Linkedin</p>
-                </div>
-              </a>
-            </div> */}
+
             <div className="col-4 col-lg">
               <a
                 target="_blank"
@@ -191,24 +129,14 @@ const Footer = () => {
                 </a>
                 <div className="col-2 text-white d-flex flex-column gap-3">
                   <h4 className="fw-normal">About Us</h4>
-                  <a
-                    className="text-white text-decoration-none footer-type-link"
-                    href="/"
-                  >
-                    <h5>Our team</h5>
-                  </a>
+
                   <a
                     className="text-white text-decoration-none footer-type-link"
                     href="/"
                   >
                     <h5>Our partners</h5>
                   </a>
-                  <a
-                    className="text-white text-decoration-none footer-type-link"
-                    href="/"
-                  >
-                    <h5>Brand</h5>
-                  </a>
+
                   <a
                     className="text-white text-decoration-none footer-type-link"
                     href="/"
@@ -252,20 +180,7 @@ const Footer = () => {
                   >
                     <h5>LKD Tools</h5>
                   </a>
-                  <a
-                    className="text-white text-decoration-none footer-type-link"
-                    href="/"
-                  >
-                    <h5>Governance</h5>
-                  </a>
-                  <a
-                    href="/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-white text-decoration-none footer-type-link"
-                  >
-                    <h5>Bridge</h5>
-                  </a>
+
                   <a
                     className="text-white text-decoration-none footer-type-link"
                     href="/"
@@ -278,95 +193,34 @@ const Footer = () => {
                   >
                     <h5>LKD Token</h5>
                   </a>
-                  <a
-                    className="text-white text-decoration-none footer-type-link"
-                    href="/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <h5>Metaverse</h5>
-                  </a>
                 </div>
                 <div className="col-2 text-white d-flex flex-column gap-3">
                   <h4 className="fw-normal">Learn</h4>
-                  <a
-                    href="/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-white text-decoration-none footer-type-link"
-                  >
-                    <h5>How to buy LKD</h5>
-                  </a>
-                  <a
-                    href="/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-white text-decoration-none footer-type-link"
-                  >
-                    <h5>How to Stake</h5>
-                  </a>
-                  <a
+                  <div className="d-flex flex-column gap-3">
+                    <a
+                      href="/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-white text-decoration-none footer-type-link"
+                    >
+                      <h5>How to buy LKD</h5>
+                    </a>
+                    <a
+                      href="/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-white text-decoration-none footer-type-link"
+                    >
+                      <h5>How to Stake</h5>
+                    </a>
+                    {/* <a
                     href="/"
                     target="_blank"
                     rel="noreferrer"
                     className="text-white text-decoration-none footer-type-link"
                   >
                     <h5>How to Farm</h5>
-                  </a>
-                  <a
-                    href="/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-white text-decoration-none footer-type-link"
-                  >
-                    <h5>How to use Buyback</h5>
-                  </a>
-                  <a
-                    href="/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-white text-decoration-none footer-type-link"
-                  >
-                    <h5>How to use the Vault</h5>
-                  </a>
-                  <a
-                    href="/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-white text-decoration-none footer-type-link"
-                  >
-                    <h5>How to use LKD Tools</h5>
-                  </a>
-                  <a
-                    href="/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-white text-decoration-none footer-type-link"
-                  >
-                    <h5>How to Bridge</h5>
-                  </a>
-                </div>
-                <div className="col-2 text-white d-flex flex-column gap-3">
-                  <h4 className="fw-normal">Anouncements</h4>
-                  <div className="d-flex flex-column gap-3">
-                    <a
-                      className="text-white text-decoration-none footer-type-link"
-                      href="/"
-                    >
-                      <h5>Latest anouncements</h5>
-                    </a>
-                    <a
-                      className="text-white text-decoration-none footer-type-link"
-                      href="/"
-                    >
-                      <h5>Latest events</h5>
-                    </a>
-                    <a
-                      className="text-white text-decoration-none footer-type-link"
-                      href="/"
-                    >
-                      <h5>Press</h5>
-                    </a>
+                  </a> */}
                   </div>
                   <div
                     className="d-flex flex-row gap-3 position-relative"

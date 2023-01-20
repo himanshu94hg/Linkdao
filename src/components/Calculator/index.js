@@ -4,15 +4,15 @@ import "../ToolsPage/index.scss";
 // import CalculatorBg from "../../assets/CalculatorBg.svg";
 // import LineGraph from "../../assets/line-graph.svg";
 import Sphere from "../../assets/Sphere.svg";
-import axios from "axios";
 import { IoIosArrowForward } from "react-icons/io";
+import { getPrice } from "../../utils";
 
 const Calculator = () => {
-  const [usdToDeposit, setUsdToDeposit] = useState(250);
+  const [usdToDeposit, setUsdToDeposit] = useState(1000);
   const [days, setDays] = useState(30);
   const [price, setPrice] = useState();
-  const [percentage, setPercentage] = useState(0.02);
-  const [pool, setPool] = useState(true);
+  const [percentage, setPercentage] = useState(0.03);
+  const [pool, setPool] = useState(false);
 
   const handleInputUSD = (e) => {
     setUsdToDeposit(e.target.value);
@@ -21,12 +21,12 @@ const Calculator = () => {
     setDays(e.target.value);
   };
 
-  const apiUrl = "https://api.linkdao.network/api/tokenPrice";
+  // const apiUrl = "https://api.linkdao.network/api/tokenPrice";
 
-  const getPrice = async () => {
-    const response = await axios.get(apiUrl);
-    return response.data.data;
-  };
+  // const getPrice = async () => {
+  //   const response = await axios.get(apiUrl);
+  //   return response.data.data;
+  // };
 
   const handlePrice = useCallback(async () => {
     let pr = await getPrice();
@@ -39,33 +39,25 @@ const Calculator = () => {
 
   return (
     <>
-      <div className="container-lg position-relative calculator-inner overlow-hidden">
+      <div className="position-relative calculator-inner overlow-hidden">
         <div className="row lkd-metaverse justify-content-between gap-2 gap-sm-0">
           <div className="col-12 col-lg-7 col-md-7 col-sm-6 order-2 order-md-1">
             <div className="elevated-container form mr-lg-4">
               <form>
                 <div className="row">
                   <div className="p-md-0 col-12">
-                    <h2>Staking</h2>
+                    <h2
+                      style={{ color: "rgb(85, 79, 216)" }}
+                      className="mb-4 fw-bolder"
+                    >
+                      Staking
+                    </h2>
                   </div>
                   <div className="p-md-0 col-12 pool">
                     {/* Eth button */}
                     {/* bsc button */}
                     {/* Avax button */}
 
-                    <button
-                      onClick={() => {
-                        setPercentage(0.02);
-                        setDays(30);
-                        setPool(true);
-                      }}
-                      type="button"
-                      className={`btn btn-outlin ${
-                        pool === true ? "activeBtn" : ""
-                      }`}
-                    >
-                      18 months
-                    </button>
                     <button
                       onClick={() => {
                         setPercentage(0.03);
@@ -75,25 +67,38 @@ const Calculator = () => {
                       type="button"
                       className={`btn btn-outlin ${
                         pool === true ? "" : "activeBtn"
-                      } mx-3`}
+                      } px-4`}
                     >
-                      24 months
+                      Pool A1
+                    </button>
+                    <button
+                      onClick={() => {
+                        setPercentage(0.02);
+                        setDays(30);
+                        setPool(true);
+                      }}
+                      type="button"
+                      className={`btn btn-outlin ${
+                        pool === true ? "activeBtn" : ""
+                      } mx-3 px-4`}
+                    >
+                      Pool B
                     </button>
                   </div>
                 </div>
                 <div className="row price-row">
                   <div className="p-md-0 col-7 d-flex ">
                     <div className="price-box">
-                      <span className="sub">Profit</span>
+                      <span className="sub">Approx. Profit</span>
                       <span className="price">
-                        ${parseFloat(usdToDeposit * percentage).toFixed(3)}
+                        ${parseFloat(usdToDeposit * percentage).toFixed(2)}
                         <span className="currency">USD</span>
                       </span>
                       <span className="sup">
                         (
-                        {parseFloat(usdToDeposit * percentage * price).toFixed(
-                          3
-                        )}
+                        {parseFloat(
+                          (usdToDeposit * percentage) / price
+                        ).toFixed(4)}
                         LKD)
                       </span>
                     </div>
@@ -145,7 +150,7 @@ const Calculator = () => {
                         href="https://app.linkdao.network/"
                         target="_blank"
                         rel="noreferrer"
-                        className="btn filled-orange-btn d-flex align-items-center justify-content-center"
+                        className="btn d-flex align-items-center justify-content-center filled-btn"
                       >
                         <span
                           style={{
@@ -186,7 +191,7 @@ const Calculator = () => {
                         }
                       }}
                       type="button"
-                      className="btn btn-outline ms-1"
+                      className="btn btn-outline ms-2"
                     >
                       3 months
                     </button>
@@ -201,9 +206,9 @@ const Calculator = () => {
                         }
                       }}
                       type="button"
-                      className="btn btn-outline ms-1"
+                      className="btn btn-outline ms-2"
                     >
-                      {pool === true ? "9" : "12"} months
+                      {pool === true ? "9 months" : "1 year"}
                     </button>
                     <button
                       onClick={() => {
@@ -216,9 +221,9 @@ const Calculator = () => {
                         }
                       }}
                       type="button"
-                      className="btn btn-outline ms-1"
+                      className="btn btn-outline ms-2"
                     >
-                      {pool === true ? "18" : "24"} months
+                      {pool === true ? "1.5 years" : "2 years"}
                     </button>
                   </div>
                 </div>
@@ -244,7 +249,9 @@ const Calculator = () => {
                 data-aos-duration="1000"
               >
                 <h1 className="metaverse fs-50">Calculate your</h1>
-                <h1 className="fs-50">staking yield</h1>
+                <h1 className="fs-50 mt-2">
+                  staking <span className="metaverse">yield</span>
+                </h1>
               </div>
               <br />
               <p
