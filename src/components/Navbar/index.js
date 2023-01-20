@@ -41,12 +41,19 @@ const Navbar = () => {
             >
               Documents
             </a>
-            <a className="text-decoration-none navlink fw-bold" href="/">
+            <a
+              className="text-decoration-none navlink fw-bold"
+              href="https://linkdao-network.gitbook.io/linkdao/contacts/contacts"
+              target="_blank"
+              rel="noreferrer"
+            >
               Support
             </a>
             <a
               className="text-decoration-none navlink fw-bold"
               href="https://linkdao-network.gitbook.io/linkdao/contacts/contacts"
+              target="_blank"
+              rel="noreferrer"
             >
               Contact
             </a>

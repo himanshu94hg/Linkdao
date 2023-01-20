@@ -23,7 +23,7 @@ const MobileMenu = () => {
         <li className="mobile-navlink m-0 p-4">
           <a
             className="text-decoration-none d-flex justify-content-between align-items-center"
-            href="https://linkdao-network.gitbook.io/linkdao/contacts/contacts"
+            href="https://linkdao-network.gitbook.io/linkdao/"
             target="_blank"
             rel="noreferrer"
           >
@@ -35,7 +35,9 @@ const MobileMenu = () => {
         <li className="mobile-navlink m-0 p-4">
           <a
             className="text-decoration-none d-flex justify-content-between align-items-center"
-            href="/"
+            href="https://linkdao-network.gitbook.io/linkdao/contacts/contacts"
+            target="_blank"
+            rel="noreferrer"
           >
             Support
             <IoIosArrowForward />
@@ -46,6 +48,8 @@ const MobileMenu = () => {
           <a
             className="text-decoration-none d-flex justify-content-between align-items-center"
             href="https://linkdao-network.gitbook.io/linkdao/contacts/contacts"
+            target="_blank"
+            rel="noreferrer"
           >
             Contact
             <IoIosArrowForward />
@@ -69,7 +73,7 @@ const MobileMenu = () => {
           rel="noreferrer"
           href="https://app.linkdao.network/"
         >
-          <img src={launchapp} className="tools-btn" alt="" />
+          <img src={launchapp} className="tools-btn" width="200px" alt="" />
         </a>
       </div>
     </div>

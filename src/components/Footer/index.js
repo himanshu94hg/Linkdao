@@ -4,7 +4,7 @@ import Twitter from "../../assets/Social/twitter.svg";
 import Telegram from "../../assets/Social/telegram.svg";
 import Medium from "../../assets/Social/medium.svg";
 import Github from "../../assets/Social/github.svg";
-import Gitbook from "../../assets/Social/Gitbook.png";
+import Gitbook from "../../assets/Social/gitbook.svg";
 import Email from "../../assets/Social/email.svg";
 import coinMarketCap from "../../assets/Social/coinMarketCap.svg";
 import coinGecko from "../../assets/Social/coinGecko.svg";
@@ -95,7 +95,8 @@ const Footer = () => {
                   className="d-flex flex-row justify-content-start justify-content-lg-center align-items-center"
                   style={{ gap: "5px" }}
                 >
-                  <img src={Gitbook} alt="" />
+                  <img src={Gitbook} alt="" width="30px" />
+                  {/* <SiGitbook/> */}
                   <p className="mb-0">Gitbook</p>
                 </div>
               </a>

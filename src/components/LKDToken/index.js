@@ -2,8 +2,8 @@ import React from "react";
 import "./index.scss";
 // import Coin from "../../assets/coins/coin2.png";
 import Coin from "../../assets/coins/Coin.svg";
-import coinbg from "../../assets/coins/coinbg.png";
-import tokenCircle from "../../assets/coins/tokenCircle.png";
+import coinbg from "../../assets/coins/coinbg.svg";
+import tokenCircle from "../../assets/coins/tokenCircle.svg";
 import TokenSlider from "./TokenSlider";
 
 const LKDToken = () => {

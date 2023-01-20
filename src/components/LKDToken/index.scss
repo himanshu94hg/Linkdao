@@ -11,6 +11,10 @@
         background: linear-gradient(183deg, #472876 30%, #2d1e61 70%);
         border-radius: 56px 0;
 
+        @media (max-width:480px) {
+            margin-top: 41px;
+        }
+
         .ring-1 {
             position: absolute;
             top: 18%;
