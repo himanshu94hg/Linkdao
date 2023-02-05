@@ -12,11 +12,14 @@ import { MdOutlineFileCopy } from "react-icons/md";
 import { getPrice, getCirculatingSupply } from "../../funtions/utils";
 import BlockSafuAudit from "../../assets/BlockSafu.svg";
 import IndividualIntervalsExample from "./HeroSlider/Carousel";
+import { data } from "../../data/pools";
+import { totalStakedFunc } from "../../utils/helpers";
+
 
 const Home = () => {
   const [price, setPrice] = useState();
   const [supply, setSupply] = useState();
-  // const [staked, setStaked] = useState(0);
+  const [staked, setStaked] = useState(0);
 
   const hadleSupply = useCallback(async () => {
     let pr = await getCirculatingSupply();
@@ -28,11 +31,27 @@ const Home = () => {
     setPrice(pr);
   }, []);
 
+  const handleTotalStaked = useCallback(async () => {
+    let stk = data.map(async ({ pool, poolAbi }) => {
+      let res = await totalStakedFunc(pool, poolAbi);
+      return res;
+    });
+    let v1 = stk.reduce(async (v1, v2) => {
+      let a = await v1;
+      let b = await v2;
+      return parseFloat(a) + parseFloat(b);
+    }, 0);
+    v1.then((res) => {
+      setStaked(parseFloat(res.toFixed(3)));
+    });
+  }, []);
+
   useEffect(() => {
+    handleTotalStaked();
     handlePrice();
     hadleSupply();
     window.scrollTo(0, 0);
-  }, [handlePrice, hadleSupply]);
+  }, [handlePrice, hadleSupply, handleTotalStaked]);
 
   const copyOnClick = () => {
     navigator.clipboard.writeText("0xaF027427DC6d31A3e7e162A710a5Fe27e63E275F");
@@ -149,7 +168,7 @@ const Home = () => {
                       <div className="chainlink-cell">
                         <div className="d-flex align-items-baseline gap-2">
                           <span className="totalpaid-amount ms-2">
-                            {/* {staked} */}0
+                            {staked}
                           </span>
                           {/* <span className="totalpaid-token">ETH</span> */}
                         </div>
@@ -169,7 +188,7 @@ const Home = () => {
                       <div className="d-flex align-items-baseline gap-2">
                         <span className="totalpaid-amount">
                           <span style={{ fontSize: "26px", fontWeight: "300" }}>
-                            $18,576,186.21
+                          ${parseFloat((price*staked).toFixed(3))}
                           </span>
                         </span>
                       </div>
