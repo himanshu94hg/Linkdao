@@ -11,6 +11,7 @@ import coinGecko from "../../assets/Social/coinGecko.svg";
 import disclaimer from "../../assets/Social/disclaimer.svg";
 import Logo from "../../assets/LinkdaoNameLogo.svg";
 import Accordion from "./Accordion";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -131,34 +132,34 @@ const Footer = () => {
                 <div className="col-2 text-white d-flex flex-column gap-3">
                   <h4 className="fw-normal">About Us</h4>
 
-                  <a
+                  {/* <a
                     className="text-white text-decoration-none footer-type-link"
-                    href="/"
+                    href="/#our-partners"
                   >
                     <h5>Our partners</h5>
-                  </a>
+                  </a> */}
 
                   <a
                     className="text-white text-decoration-none footer-type-link"
-                    href="/"
+                    href="https://linkdao-network.gitbook.io/linkdao/protocol/roadmap"
                   >
                     <h5>Roadmap</h5>
                   </a>
                   <a
                     className="text-white text-decoration-none footer-type-link"
-                    href="/"
+                    href="https://linkdao-network.gitbook.io/linkdao/development/security"
                   >
                     <h5>Security</h5>
                   </a>
                   <a
                     className="text-white text-decoration-none footer-type-link"
-                    href="/"
+                    href="https://linkdao-network.gitbook.io/linkdao/protocol/tokenomics"
                   >
                     <h5>Tokenomics</h5>
                   </a>
                   <a
                     className="text-white text-decoration-none footer-type-link"
-                    href="/"
+                    href="https://linkdao-network.gitbook.io/linkdao/contacts/contacts"
                   >
                     <h5>Contact us</h5>
                   </a>
@@ -166,7 +167,7 @@ const Footer = () => {
                 <div className="col-2 text-white d-flex flex-column gap-3">
                   <h4 className="fw-normal">Solutions</h4>
                   <a
-                    href="/"
+                    href="https://linkdao-network.gitbook.io/linkdao/introduction/staking-and-earning"
                     target="_blank"
                     rel="noreferrer"
                     className="text-white text-decoration-none footer-type-link"
@@ -182,15 +183,15 @@ const Footer = () => {
                     <h5>LKD Tools</h5>
                   </a>
 
-                  <a
+                  <Link
                     className="text-white text-decoration-none footer-type-link"
-                    href="/"
+                    to="/BuyLKD"
                   >
                     <h5>Buy LKD</h5>
-                  </a>
+                  </Link>
                   <a
                     className="text-white text-decoration-none footer-type-link"
-                    href="/"
+                    href="https://linkdao-network.gitbook.io/linkdao/introduction/lets-get-started"
                   >
                     <h5>LKD Token</h5>
                   </a>
@@ -241,9 +242,9 @@ const Footer = () => {
                     >
                       <img src={coinGecko} alt="" />
                     </a>
-                    <a href="/">
+                    <Link to="/Disclaimer">
                       <img src={disclaimer} alt="" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </>

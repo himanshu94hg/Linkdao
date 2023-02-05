@@ -4,17 +4,17 @@ import "./index.scss";
 import Coin from "../../assets/coins/Coin.svg";
 import coinbg from "../../assets/coins/coinbg.svg";
 import tokenCircle from "../../assets/coins/tokenCircle.svg";
-import TokenSlider from "./TokenSlider";
+import TokenSlider from "./TokenSlider/Carousel";
 
 const LKDToken = () => {
   return (
     <>
-      <div className="row lkd-token justify-content-between">
+      <div className="row lkd-token justify-content-between mb-5">
         <div className="col-6 col-lg-3 blue-half order-2 order-lg-1">
           <img src={Coin} className="coin coinWidth" alt="" />
           <img src={coinbg} className="coin" alt="" />
-          <img className="ring-1" src={tokenCircle} alt="" />
-          <img className="ring-2" src={tokenCircle} alt="" />
+          <img className="ring-1" src={tokenCircle} alt="" width="" />
+          <img className="ring-2" src={tokenCircle} alt="" width="" />
         </div>
         <div className="token-info col-12 col-lg-6 d-flex justify-content-center align-items-end flex-column pr-3 pr-lg-5 order-1 order-lg-2">
           <div

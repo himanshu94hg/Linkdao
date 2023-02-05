@@ -7,14 +7,16 @@ import Calculator from "../Calculator";
 import Partners from "../Partners";
 import LKDToken from "../LKDToken";
 import Comet from "./Comet/Comet";
-import HeroSlider from "./HeroSlider";
+// import HeroSlider from "./HeroSlider";
 import { MdOutlineFileCopy } from "react-icons/md";
-import { getPrice, getCirculatingSupply } from "../../utils";
-import BlockSafu from "../../assets/Partners/BLOCKSAFU.svg";
+import { getPrice, getCirculatingSupply } from "../../funtions/utils";
+import BlockSafuAudit from "../../assets/BlockSafu.svg";
+import IndividualIntervalsExample from "./HeroSlider/Carousel";
 
 const Home = () => {
   const [price, setPrice] = useState();
   const [supply, setSupply] = useState();
+  // const [staked, setStaked] = useState(0);
 
   const hadleSupply = useCallback(async () => {
     let pr = await getCirculatingSupply();
@@ -29,10 +31,10 @@ const Home = () => {
   useEffect(() => {
     handlePrice();
     hadleSupply();
+    window.scrollTo(0, 0);
   }, [handlePrice, hadleSupply]);
 
   const copyOnClick = () => {
-    console.log("copied");
     navigator.clipboard.writeText("0xaF027427DC6d31A3e7e162A710a5Fe27e63E275F");
   };
 
@@ -92,7 +94,8 @@ const Home = () => {
                       window.innerWidth < 768 ? "mt-5" : "mt-3"
                     } pl-0`}
                   >
-                    <HeroSlider />
+                    {/* <HeroSlider /> */}
+                    <IndividualIntervalsExample />
                   </div>
                 </div>
                 <div className="col-12 col-lg-5 d-flex justify-content-center flex-column text-white ml-4">
@@ -103,96 +106,82 @@ const Home = () => {
           </div>
           <div className="container-fluid chainlink-wrapper">
             <div className="container-lg position-relative">
-              <div className="row justify-content-between">
-                <div class="d-grid" style={{ width: "220px" }}>
+              <div className="row justify-content-between mt-5 gap-3 align-items-center">
+                <div className="d-grid firstGrid">
+                  <div className="row chainlink-row m-0">
+                    <div className="px-0">
+                      <span
+                        className="chainlink-data-title mb-3"
+                        style={{ whiteSpace: "pre" }}
+                      >
+                        LKD Price
+                      </span>
+                      <div className="chainlink-cell">
+                        <div className="d-flex align-items-baseline gap-2">
+                          <span className="totalpaid-amount ms-2">{price}</span>
+                          {/* <span className="totalpaid-token">ETH</span> */}
+                        </div>
+                      </div>
+                    </div>{" "}
+                    <div className="px-0">
+                      <span
+                        className="chainlink-data-title"
+                        style={{ whiteSpace: "pre" }}
+                      >
+                        Circulating Supply
+                      </span>
+                      <div className="chainlink-cell">
+                        <div className="d-flex align-items-baseline gap-2">
+                          <span className="totalpaid-amount ms-2">
+                            {parseFloat(supply).toFixed(2)}
+                          </span>
+                          {/* <span className="totalpaid-token">ETH</span> */}
+                        </div>
+                      </div>
+                    </div>{" "}
+                    <div className="px-0">
+                      <span
+                        className="chainlink-data-title"
+                        style={{ whiteSpace: "pre" }}
+                      >
+                        LKD Staked
+                      </span>
+                      <div className="chainlink-cell">
+                        <div className="d-flex align-items-baseline gap-2">
+                          <span className="totalpaid-amount ms-2">
+                            {/* {staked} */}0
+                          </span>
+                          {/* <span className="totalpaid-token">ETH</span> */}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="d-grid" style={{ width: "220px" }}>
                   <span
-                    class="chainlink-data-title"
+                    className="chainlink-data-title"
                     style={{ whiteSpace: "pre" }}
                   >
-                    LKD Price
+                    Total Value Locked
                   </span>
-                  <div class="row chainlink-row m-0">
-                    <div class="chainlink-cell">
-                      <div class="d-flex align-items-baseline gap-2">
-                        <span class="totalpaid-amount">
+                  <div className="row chainlink-row">
+                    <div className="chainlink-cell">
+                      <div className="d-flex align-items-baseline gap-2">
+                        <span className="totalpaid-amount">
                           <span style={{ fontSize: "26px", fontWeight: "300" }}>
-                            ${parseFloat(price).toFixed(5)}
+                            $18,576,186.21
                           </span>
                         </span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="d-grid" style={{ width: "220px" }}>
-                  <span
-                    class="chainlink-data-title"
-                    style={{ whiteSpace: "pre" }}
-                  >
-                    LKD Total supply
-                  </span>
-                  <div class="row chainlink-row m-0">
-                    <div class="chainlink-cell">
-                      <div class="d-flex align-items-baseline gap-2">
-                        <span class="totalpaid-amount">
-                          <span style={{ fontSize: "26px", fontWeight: "300" }}>
-                            10,000,000.00
-                          </span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-grid" style={{ width: "220px" }}>
-                  <span
-                    class="chainlink-data-title"
-                    style={{ whiteSpace: "pre" }}
-                  >
-                    LKD Circulating supply
-                  </span>
-                  <div class="row chainlink-row m-0">
-                    <div class="chainlink-cell">
-                      <div class="d-flex align-items-baseline gap-2">
-                        <span class="totalpaid-amount">
-                          <span style={{ fontSize: "26px", fontWeight: "300" }}>
-                            {supply}
-                          </span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-grid" style={{ width: "220px" }}>
-                  <span
-                    class="chainlink-data-title"
-                    style={{ whiteSpace: "pre" }}
-                  >
-                    LKD Staked
-                  </span>
-                  <div class="row chainlink-row m-0">
-                    <div class="chainlink-cell">
-                      <div class="d-flex align-items-baseline gap-2">
-                        <span class="totalpaid-amount">
-                          <span style={{ fontSize: "26px", fontWeight: "300" }}>
-                            0
-                          </span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="row mt-4">
-                <div class="d-grid" style={{ width: "220px" }}>
-                  <span
-                    class="chainlink-data-title"
-                    style={{ whiteSpace: "pre" }}
-                  >
-                    Audited by
-                  </span>
-                  <div class="row audit">
-                    <div class="audited-by-section-item">
-                      <img src={BlockSafu} alt="" />
-                      <p class="audited-by-section-item-text">BlockSafu</p>
+                <div className="d-grid" style={{ gap: "10px", width: "220px" }}>
+                  <div className="row audit">
+                    <div className="audited-by-section-item">
+                      <img src={BlockSafuAudit} alt="" />
+
+                      <p className="audited-by-section-item-text"></p>
                     </div>
                   </div>
                 </div>
@@ -202,22 +191,22 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container-lg d-flex justify-content-center mb-4 mb-lg-0 mt-5">
+        <div className="container-lg d-flex justify-content-center mb-4 mb-lg-0 my-5">
           <Calculator />
         </div>
 
-        <div className="container-lg d-flex justify-content-center mb-4 mb-lg-0">
+        <div className="container-lg d-flex justify-content-center mb-4 mb-lg-0 my-5">
           <LKDToken />
         </div>
 
-        <div className="container-lg d-flex justify-content-center mb-4 mb-lg-0 ">
+        <div className="container-lg d-flex justify-content-center mb-4 mb-lg-0 my-5">
           <ToolsPage />
         </div>
 
         <div
-          className="container-fluid"
+          className="container-fluid my-5"
           id="our-partners"
-          style={{ padding: " 0px 30px" }}
+          // style={{ padding: " 0px 30px" }}
         >
           <Partners />
         </div>

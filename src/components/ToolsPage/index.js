@@ -10,7 +10,6 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 const ToolsPage = () => {
   useEffect(() => {
-    console.log(window.innerWidth);
     if (window.innerWidth > 785) {
       document.getElementById("pulse").classList.add("rotate-scale-up");
       document.getElementById("pulse").classList.remove("pulse");
@@ -22,8 +21,8 @@ const ToolsPage = () => {
 
   return (
     <>
-      <div className="row lkd-tools">
-        <div className="col-12 col-lg-5 ">
+      <div className="row lkd-tools mt-5">
+        <div className="col-12 col-lg-5">
           <div className="gap-5 d-grid align-items-start justify-content-center pl-5 pt-5 pb-5 p-md-5 leftcol">
             <div className="gap-3 d-grid m-md-auto m-sm-auto m-lg-0">
               <div

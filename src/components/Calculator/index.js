@@ -5,7 +5,7 @@ import "../ToolsPage/index.scss";
 // import LineGraph from "../../assets/line-graph.svg";
 import Sphere from "../../assets/Sphere.svg";
 import { IoIosArrowForward } from "react-icons/io";
-import { getPrice } from "../../utils";
+import { getPrice } from "../../funtions/utils";
 
 const Calculator = () => {
   const [usdToDeposit, setUsdToDeposit] = useState(1000);
@@ -46,12 +46,7 @@ const Calculator = () => {
               <form>
                 <div className="row">
                   <div className="p-md-0 col-12">
-                    <h2
-                      style={{ color: "rgb(85, 79, 216)" }}
-                      className="mb-4 fw-bolder"
-                    >
-                      Staking
-                    </h2>
+                    <h2 className="mb-4 fw-bolder metaverse">Staking</h2>
                   </div>
                   <div className="p-md-0 col-12 pool">
                     {/* Eth button */}
@@ -177,7 +172,9 @@ const Calculator = () => {
                         }
                       }}
                       type="button"
-                      className="btn btn-outline"
+                      className={`btn btn-outline ${
+                        days === 30 ? "activeBtn" : ""
+                      }`}
                     >
                       1 month
                     </button>
@@ -191,7 +188,9 @@ const Calculator = () => {
                         }
                       }}
                       type="button"
-                      className="btn btn-outline ms-2"
+                      className={`btn btn-outline ms-2 ${
+                        days === 90 ? "activeBtn" : ""
+                      }`}
                     >
                       3 months
                     </button>
@@ -206,7 +205,9 @@ const Calculator = () => {
                         }
                       }}
                       type="button"
-                      className="btn btn-outline ms-2"
+                      className={`btn btn-outline ms-2 ${
+                        days === 270 || days === 360 ? "activeBtn" : ""
+                      }`}
                     >
                       {pool === true ? "9 months" : "1 year"}
                     </button>
@@ -221,7 +222,9 @@ const Calculator = () => {
                         }
                       }}
                       type="button"
-                      className="btn btn-outline ms-2"
+                      className={`btn btn-outline ms-2 ${
+                        days === 540 || days === 720 ? "activeBtn" : ""
+                      }`}
                     >
                       {pool === true ? "1.5 years" : "2 years"}
                     </button>

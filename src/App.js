@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.scss";
+import BuyLKD from "./components/BuyLKD";
+import Disclaimer from "./components/Disclaimer";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -12,6 +14,8 @@ function App() {
         <Navbar />
         <NavMobile />
         <Routes>
+          <Route path="/Disclaimer" element={<Disclaimer />} />
+          <Route path="/BuyLKD" element={<BuyLKD />} />
           <Route path="/" element={<Home />} />
         </Routes>
         <Footer />

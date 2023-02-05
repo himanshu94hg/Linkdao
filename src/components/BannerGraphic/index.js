@@ -14,7 +14,7 @@ const BannerGraphic = () => {
           <div className="satellite-orbit3">
             <div className="satellite">
               <a
-                href="https://app.lkdius.com/launchpad"
+                href="https://app.linkdao.network/"
                 target="_blank"
                 rel="noreferrer"
                 style={{ width: "50px", height: "50px", display: "flex" }}
@@ -24,7 +24,7 @@ const BannerGraphic = () => {
             </div>
             <div className="satellite3">
               <a
-                href="https://app.lkdius.com/"
+                href="https://app.linkdao.network/"
                 target="_blank"
                 rel="noreferrer"
                 style={{ width: "50px", height: "50px", display: "flex" }}
@@ -34,7 +34,7 @@ const BannerGraphic = () => {
             </div>
             <div className="satellite33">
               <a
-                href="https://app.lkdius.com/bridge"
+                href="https://app.linkdao.network/"
                 target="_blank"
                 rel="noreferrer"
                 style={{ width: "50px", height: "50px", display: "flex" }}
@@ -46,7 +46,7 @@ const BannerGraphic = () => {
           <div className="satellite-orbit4">
             <div className="satellite4">
               <a
-                href="https://app.lkdius.com/earn"
+                href="https://app.linkdao.network/earn"
                 target="_blank"
                 rel="noreferrer"
                 style={{ width: "50px", height: "50px", display: "flex" }}
@@ -57,7 +57,7 @@ const BannerGraphic = () => {
             <div className="satellite44">
               <a
                 className=""
-                href="/governance"
+                href="https://app.linkdao.network/"
                 style={{ width: "50px", height: "50px", display: "flex" }}
               >
                 <img src={Transparent} alt="" />
@@ -66,7 +66,7 @@ const BannerGraphic = () => {
             <div className="satellite22"></div>
             <div className="satellite2">
               <a
-                href="https://www.worldoflkdians.com/"
+                href="https://app.linkdao.network/"
                 target="_blank"
                 rel="noreferrer"
                 style={{ width: "50px", height: "50px", display: "flex" }}

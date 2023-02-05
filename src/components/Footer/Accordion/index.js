@@ -1,5 +1,9 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import coinMarketCap from "../../../assets/Social/coinMarketCap.svg";
+import coinGecko from "../../../assets/Social/coinGecko.svg";
+import disclaimer from "../../../assets/Social/disclaimer.svg";
+import { Link } from "react-router-dom";
 
 const Accordion = () => {
   return (
@@ -24,34 +28,34 @@ const Accordion = () => {
             data-bs-parent="#accordionFooter"
           >
             <div className="d-flex flex-column gap-3">
-              <a
+              {/* <a
                 className="text-white text-decoration-none footer-type-link"
                 href="/"
               >
                 <h5>Our partners</h5>
-              </a>
+              </a> */}
 
               <a
                 className="text-white text-decoration-none footer-type-link"
-                href="/"
+                href="https://linkdao-network.gitbook.io/linkdao/protocol/roadmap"
               >
                 <h5>Roadmap</h5>
               </a>
               <a
                 className="text-white text-decoration-none footer-type-link"
-                href="/"
+                href="https://linkdao-network.gitbook.io/linkdao/development/security"
               >
                 <h5>Security</h5>
               </a>
               <a
                 className="text-white text-decoration-none footer-type-link"
-                href="/"
+                href="https://linkdao-network.gitbook.io/linkdao/protocol/tokenomics"
               >
                 <h5>Tokenomics</h5>
               </a>
               <a
                 className="text-white text-decoration-none footer-type-link"
-                href="/"
+                href="https://linkdao-network.gitbook.io/linkdao/contacts/contacts"
               >
                 <h5>Contact us</h5>
               </a>
@@ -80,7 +84,7 @@ const Accordion = () => {
             <div className="row">
               <div className="col-12 d-flex flex-column gap-3">
                 <a
-                  href="/"
+                  href="https://linkdao-network.gitbook.io/linkdao/introduction/staking-and-earning"
                   className="text-white text-decoration-none footer-type-link"
                 >
                   <h5>Earn</h5>
@@ -92,15 +96,15 @@ const Accordion = () => {
                   <h5>LKD Tools</h5>
                 </a>
 
-                <a
+                <Link
                   className="text-white text-decoration-none footer-type-link"
-                  href="/"
+                  to="/BuyLKD"
                 >
                   <h5>Buy LKD</h5>
-                </a>
+                </Link>
                 <a
                   className="text-white text-decoration-none footer-type-link"
-                  href="/"
+                  href="https://linkdao-network.gitbook.io/linkdao/introduction/lets-get-started"
                 >
                   <h5>LKD Token</h5>
                 </a>
@@ -164,27 +168,18 @@ const Accordion = () => {
             rel="noreferrer"
             href="https://coinmarketcap.com/currencies/linkdao-network/"
           >
-            <img
-              src="/static/media/coinMarketCap.5ba639eb0400acb0ad911140c7d768c8.svg"
-              alt=""
-            />
+            <img src={coinMarketCap} alt="" />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://www.coingecko.com/en/coins/linkdao"
           >
-            <img
-              src="/static/media/coinGecko.032c651f97ccfff8722c41e2918cae0e.svg"
-              alt=""
-            />
+            <img src={coinGecko} alt="" />
           </a>
-          <a href="/">
-            <img
-              src="/static/media/disclaimer.02b1b6198e9d2ef834f1bb8374337156.svg"
-              alt=""
-            />
-          </a>
+          <Link to="/disclaimer">
+            <img src={disclaimer} alt="" />
+          </Link>
         </div>
       </div>
     </>

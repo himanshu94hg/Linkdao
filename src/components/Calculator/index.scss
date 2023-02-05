@@ -37,15 +37,20 @@
 .elevated-container {
     background-color: var(--white-nft);
     border-radius: 8px;
-    box-shadow: 12px 16px 44px rgb(0 0 0 / 12%);
+    box-shadow: 0px 0 28px 18px rgb(0 0 0 / 12%);
     padding: 24px 16px;
-}
 
-@media (min-width: 768px) {
-    .elevated-container {
+    @media (max-width:768px) {
+        margin-top: 35px;
+    }
+
+    @media (min-width: 768px) {
         padding: 32px;
+
     }
 }
+
+
 
 .form {
     position: relative;
@@ -222,10 +227,14 @@
 }
 
 
-@media (min-width: 769px) {
-    .calheading {
+.calheading {
+    @media (min-width: 769px) {
         display: flex;
         justify-content: center;
+    }
+
+    @media (max-width:768px) {
+        margin-top: 40px;
     }
 }
 
@@ -237,6 +246,11 @@
         font-weight: 400;
         font-size: 1rem;
 
+        &:hover {
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.09) !important;
+        }
+
+
         &:active,
         &:focus {
             color: #fff;
@@ -245,13 +259,14 @@
 }
 
 .activeBtn {
-    background: linear-gradient(183deg, #472876 30%, #2d1e61 70%) !important;
+    background: linear-gradient(183deg, #472876 30%, #472876 70%) !important;
     color: #fff !important;
     border: none !important;
 
     &:active,
     &:focus {
         color: #fff;
+
     }
 
     // box-shadow: 0 9px 30px rgb(81 222 219 / 89%);
@@ -266,6 +281,10 @@
         padding: 0px 3px;
         height: 30px;
         width: 100%;
+
+        &:hover {
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.09) !important;
+        }
 
         &:active,
         &:focus {

@@ -113,3 +113,14 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+
+.carousel-control-prev,
+.carousel-control-next,
+.carousel-indicators {
+    display: none !important;
+}
+
+.carousel-inner {
+    padding: 10px 10px 0;
+}

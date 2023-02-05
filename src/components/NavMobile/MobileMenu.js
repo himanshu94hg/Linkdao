@@ -1,5 +1,6 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 import launchapp from "../../assets/launchapp.svg";
 
 const MobileMenu = () => {
@@ -11,13 +12,13 @@ const MobileMenu = () => {
     >
       <ul className="w-100 px-0 ulNav">
         <li className="mobile-navlink m-0 p-4">
-          <a
+          <Link
             className="text-decoration-none d-flex justify-content-between align-items-center"
-            href="/"
+            to="/"
           >
             LKD
             <IoIosArrowForward />
-          </a>
+          </Link>
         </li>
 
         <li className="mobile-navlink m-0 p-4">
@@ -33,15 +34,13 @@ const MobileMenu = () => {
         </li>
 
         <li className="mobile-navlink m-0 p-4">
-          <a
+          <Link
             className="text-decoration-none d-flex justify-content-between align-items-center"
-            href="https://linkdao-network.gitbook.io/linkdao/contacts/contacts"
-            target="_blank"
-            rel="noreferrer"
+            to="/BuyLKD"
           >
-            Support
+            Buy LKD
             <IoIosArrowForward />
-          </a>
+          </Link>
         </li>
 
         <li className="mobile-navlink m-0 p-4">

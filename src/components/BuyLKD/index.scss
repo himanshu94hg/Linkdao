@@ -1,0 +1,269 @@
+.buylkdscreen {
+  overflow-x: hidden;
+  background: url(../../assets/buylkd-screenbg.png) 50% center / 100% no-repeat;
+  background-position: 50% center;
+  background-repeat: no-repeat;
+}
+
+.buylkd-main-hero {
+  min-height: 500px;
+  background: linear-gradient(0deg,
+      rgb(239, 240, 246),
+      rgba(239, 240, 246, 0) 73.43%);
+  border-radius: 0px 0px 56px 56px;
+  overflow: hidden;
+}
+
+.buylkd-main-hero h1 {
+  color: rgb(0, 0, 0);
+}
+
+.metaverse {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(1turn,
+      rgb(85, 79, 216) 1.07%,
+      rgb(119, 112, 224) 88.8%) text;
+}
+
+.buylkdcoin {
+  height: 180px;
+  width: 180px;
+}
+
+
+
+.backgroundbuylkd {
+  animation: scale 1s linear infinite alternate both;
+  -webkit-animation: scale 1s linear infinite alternate both;
+  left: -19%;
+  position: absolute;
+  top: -7%;
+  width: 100%;
+  z-index: 1;
+
+  @-webkit-keyframes scale {
+    0% {
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+
+    100% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes scale {
+    0% {
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+
+    100% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+}
+
+
+
+.buylkdcard-wrapper {
+  box-shadow: rgba(18, 18, 18, 0.08) 0px 32px 64px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-image: initial;
+  border-radius: 12px 0px;
+  gap: 5px;
+  padding: 16px;
+  transition: all 0.25s ease 0s;
+}
+
+.buylkdcard-wrapper .buylkdcard-logo {
+  height: 40px;
+  object-fit: contain;
+  width: 40px;
+}
+
+.buylkdcard-wrapper .buylkdcard-title {
+  color: rgb(20, 20, 43);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.018em;
+  line-height: 21px;
+}
+
+.buylkdcard-wrapper .videodesc-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  background: rgba(117, 202, 194, 0.3);
+  border-radius: 100px;
+  padding: 2px 5px;
+}
+
+.buylkdcard-wrapper .videodesc {
+  color: rgb(117, 202, 194);
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.buylkdcard-wrapper .rightarrow-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(rgb(119, 112, 224), rgb(85, 79, 216));
+  border-radius: 10px;
+  padding: 7px 12px;
+}
+
+hr {
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(90deg,
+      rgba(85, 79, 216, 0),
+      rgb(85, 79, 216) 53.13%,
+      rgba(85, 79, 216, 0) 101%);
+}
+
+.buylkdcard-wrapper .buyitemcard {
+  flex-wrap: inherit;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: rgb(245, 246, 250);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(245, 246, 250);
+  border-image: initial;
+  border-radius: 6px;
+  padding: 5px;
+  transition: all 0.25s ease 0s;
+}
+
+.buylkdcard-wrapper .buyitemcard:last-child {
+  margin-bottom: 0px !important;
+}
+
+.buylkdcard-wrapper .vidthumbnail {
+  width: 100px;
+  border-radius: 6px;
+}
+
+.buylkdcard-wrapper .walletimg {
+  height: 20px;
+  width: 20px;
+}
+
+.walletname {
+  color: rgb(78, 75, 102);
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.buylkdcard-wrapper .buyitemcard .buyitem-arrow {
+  position: relative;
+  right: 5px;
+}
+
+.buylkdcard-wrapper .videotitle {
+  color: rgb(20, 20, 43);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: -0.018em;
+  line-height: 15px;
+  width: 124px;
+}
+
+.supportedwallet-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(1turn,
+      rgb(85, 79, 216),
+      rgb(117, 110, 223) 98.32%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgb(239, 240, 246);
+  border-image: initial;
+  border-radius: 56px 0px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.supportedwallet-wrapper h1 {
+  color: rgb(247, 247, 255);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 64px;
+}
+
+.lkdcontractaddr {
+  color: rgb(247, 247, 252);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 16px;
+}
+
+.contractaddr {
+  color: rgb(247, 247, 252);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.018em;
+  line-height: 21px;
+  gap: 5px;
+}
+
+.contractaddr,
+.walletitem {
+  align-items: center;
+  display: flex;
+}
+
+.walletitem {
+  height: fit-content;
+  width: 238px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(124, 119, 225);
+  border-image: initial;
+  border-radius: 12px 0px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.wallettitle {
+  color: rgba(247, 247, 255, 0.9);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 64px;
+}
+
+.sw_col {
+  @media (max-width:710px) {
+    flex-direction: column;
+  }
+}
+
+.lkdaddr-wrapper {
+  @media (max-width:710px) {
+    align-items: flex-start;
+  }
+}
+
+.sw_col2 {
+
+  @media (min-width:710px) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
