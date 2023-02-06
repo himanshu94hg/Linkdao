@@ -12,13 +12,15 @@ const MobileMenu = () => {
     >
       <ul className="w-100 px-0 ulNav">
         <li className="mobile-navlink m-0 p-4">
-          <Link
+          <abbr
             className="text-decoration-none d-flex justify-content-between align-items-center"
-            to="/"
+            href="https://linkdao-network.gitbook.io/linkdao/introduction/lets-get-started"
+            target="_blank"
+            rel="norefferer"
           >
             LKD
             <IoIosArrowForward />
-          </Link>
+          </abbr>
         </li>
 
         <li className="mobile-navlink m-0 p-4">
@@ -72,7 +74,7 @@ const MobileMenu = () => {
           rel="noreferrer"
           href="https://app.linkdao.network/"
         >
-          <img src={launchapp} className="tools-btn" width="200px" alt="" />
+          <img src={launchapp} className="tools-btn" width="150px" alt="" />
         </a>
       </div>
     </div>

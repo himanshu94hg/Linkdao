@@ -3,7 +3,8 @@ import "./index.scss";
 import "../ToolsPage/index.scss";
 // import CalculatorBg from "../../assets/CalculatorBg.svg";
 // import LineGraph from "../../assets/line-graph.svg";
-import Sphere from "../../assets/Sphere.svg";
+// import Sphere from "../../assets/Sphere.svg";
+import Sphere from "../../assets/newsSphere.png";
 import { IoIosArrowForward } from "react-icons/io";
 import { getPrice } from "../../funtions/utils";
 

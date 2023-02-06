@@ -17,7 +17,7 @@ const NavMobile = () => {
     <>
       <div className="container-fluid mobile-navbar white-navbar py-3 d-flex justify-content-between align-items-center d-lg-none ">
         <a aria-current="page" className="active" href="/">
-          <img src={Logo} width="170" alt="" />
+          <img src={Logo} width="130" alt="" />
         </a>
         <Hamburger className="hamburgermenu" onToggle={toggleMenu} />
       </div>

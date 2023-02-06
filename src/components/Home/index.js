@@ -15,7 +15,6 @@ import IndividualIntervalsExample from "./HeroSlider/Carousel";
 import { data } from "../../data/pools";
 import { totalStakedFunc } from "../../utils/helpers";
 
-
 const Home = () => {
   const [price, setPrice] = useState();
   const [supply, setSupply] = useState();
@@ -188,7 +187,7 @@ const Home = () => {
                       <div className="d-flex align-items-baseline gap-2">
                         <span className="totalpaid-amount">
                           <span style={{ fontSize: "26px", fontWeight: "300" }}>
-                          ${parseFloat((price*staked).toFixed(3))}
+                            ${parseFloat((price * staked).toFixed(3))}
                           </span>
                         </span>
                       </div>

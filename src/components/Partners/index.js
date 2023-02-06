@@ -8,7 +8,7 @@ import COINGECO from "../../assets/Partners/COINGKO.svg";
 import BLOCKSAFU from "../../assets/Partners/BLOCKSAFU.svg";
 import DivinerProtocol from "../../assets/Partners/DivinerProtocol.svg";
 import NFTB from "../../assets/Partners/NFTB.svg";
-import PINKSALE from "../../assets/Partners/PINKSALE.svg";
+// import PINKSALE from "../../assets/Partners/PINKSALE.svg";
 import ERAX from "../../assets/Partners/ERAX.svg";
 
 const Partners = () => {
@@ -98,7 +98,7 @@ const Partners = () => {
             <p className="mb-0 text-dark">NFTb</p>
           </div>
         </a>
-        <a
+        {/* <a
           href="https://www.pinksale.finance/"
           target="_blank"
           rel="noreferrer"
@@ -107,7 +107,7 @@ const Partners = () => {
             <img src={PINKSALE} alt="" />
             <p className="mb-0 text-dark">PinkSale</p>
           </div>
-        </a>
+        </a> */}
         <a href="https://erax.io/" target="_blank" rel="noreferrer">
           <div className="partner_wrapper d-flex flex-column align-items-center justify-content-center">
             <img src={ERAX} alt="" />

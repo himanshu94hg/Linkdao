@@ -4,6 +4,14 @@ import Coin from "../../assets/coins/Coin.svg";
 import purplebg from "../../assets/purplebg.png";
 import RightArrow from "../../assets/right-arrow.svg";
 import Copybtn from "../../assets/Copybtn.svg";
+import PANCK from "../../assets/Partners/PANCK.svg";
+import BITMRT from "../../assets/Partners/BITMRT.svg";
+import LBNK from "../../assets/Partners/LBNK.svg";
+import MetaMask from "../../assets/Wallets/metamask.svg";
+import Autherium from "../../assets/Wallets/Autherium.svg";
+import TrustWallet from "../../assets/Wallets/trustwallet.svg";
+import WalletConnect from "../../assets/Wallets/WalletConnect.svg";
+import BinanceChain from "../../assets/Wallets/BinanceChain.svg";
 
 const BuyLKD = () => {
   const [copy, setCopy] = useState(false);
@@ -44,25 +52,24 @@ const BuyLKD = () => {
                   <img className="backgroundbuylkd" src={purplebg} alt="" />
                 </div>
               </div>
-              <div className="row justify-content-center pb-5">
-                <div className="col-12 col-lg-3 my-3">
+              <div
+                className="row justify-content-center pb-5"
+                style={{ width: "95%" }}
+              >
+                <div className="col-12 col-lg-4 my-5">
                   <div className="buylkdcard-wrapper ">
                     <div className="row m-0 gap-2 justify-content-between align-items-center">
                       <div className="d-flex gap-2 p-0 align-items-center">
-                        <img
-                          src="/static/media/coinbase.99cf87ba0c2ab156792d.png"
-                          alt=""
-                          className="buylkdcard-logo"
-                        />
+                        <img src={PANCK} alt="" className="buylkdcard-logo" />
                         <div className="d-flex flex-column gap-1">
-                          <span className="buylkdcard-title">Coinbase</span>
+                          <span className="buylkdcard-title">PancakeSwap</span>
                         </div>
                       </div>
                       <a
-                        href="https://pro.coinbase.com/trade/LKD-USD"
+                        href="https://pancakeswap.finance/swap?inputCurrency=0xaf027427dc6d31a3e7e162a710a5fe27e63e275f"
                         target="_blank"
                         rel="noreferrer"
-                        className="pr-0"
+                        className="pr-0 mt-3"
                       >
                         <div className="rightarrow-wrapper">
                           <img src={RightArrow} alt="" />
@@ -71,24 +78,20 @@ const BuyLKD = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-lg-3 my-3">
+                <div className="col-12 col-lg-4 my-5">
                   <div className="buylkdcard-wrapper ">
                     <div className="row m-0 gap-2 justify-content-between align-items-center">
                       <div className="d-flex gap-2 p-0 align-items-center">
-                        <img
-                          src="/static/media/huobi.a3ae910c2269423ef82d.png"
-                          alt=""
-                          className="buylkdcard-logo"
-                        />
+                        <img src={BITMRT} alt="" className="buylkdcard-logo" />
                         <div className="d-flex flex-column gap-1">
-                          <span className="buylkdcard-title">Huobi</span>
+                          <span className="buylkdcard-title">BitMart</span>
                         </div>
                       </div>
                       <a
-                        href="https://www.huobi.com/en-us/exchange/lkd_usdt/"
+                        href="https://www.bitmart.com/trade/en?layout=basic&symbol=LKD_USDT"
                         target="_blank"
                         rel="noreferrer"
-                        className="pr-0"
+                        className="pr-0 mt-3"
                       >
                         <div className="rightarrow-wrapper">
                           <img src={RightArrow} alt="" />
@@ -97,232 +100,20 @@ const BuyLKD = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-lg-3 my-3">
+                <div className="col-12 col-lg-4 my-5">
                   <div className="buylkdcard-wrapper ">
                     <div className="row m-0 gap-2 justify-content-between align-items-center">
                       <div className="d-flex gap-2 p-0 align-items-center">
-                        <img alt="" className="buylkdcard-logo" />
+                        <img src={LBNK} alt="" className="buylkdcard-logo" />
                         <div className="d-flex flex-column gap-1">
-                          <span className="buylkdcard-title">KuCoin</span>
+                          <span className="buylkdcard-title">Lbank</span>
                         </div>
                       </div>
                       <a
                         href="https://www.kucoin.com/trade/LKD-USDT"
                         target="_blank"
                         rel="noreferrer"
-                        className="pr-0"
-                      >
-                        <div className="rightarrow-wrapper">
-                          <img src={RightArrow} alt="" />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-3 my-3">
-                  <div className="buylkdcard-wrapper ">
-                    <div className="row m-0 gap-2 justify-content-between align-items-center">
-                      <div className="d-flex gap-2 p-0 align-items-center">
-                        <img alt="" className="buylkdcard-logo" />
-                        <div className="d-flex flex-column gap-1">
-                          <span className="buylkdcard-title">Gate.io</span>
-                        </div>
-                      </div>
-                      <a
-                        href="https://www.gate.io/zh/trade/LKD_USDT"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="pr-0"
-                      >
-                        <div className="rightarrow-wrapper">
-                          <img src={RightArrow} alt="" />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-3 my-3">
-                  <div className="buylkdcard-wrapper ">
-                    <div className="row m-0 gap-2 justify-content-between align-items-center">
-                      <div className="d-flex gap-2 p-0 align-items-center">
-                        <img alt="" className="buylkdcard-logo" />
-                        <div className="d-flex flex-column gap-1">
-                          <span className="buylkdcard-title">Poloniex</span>
-                        </div>
-                      </div>
-                      <a
-                        href="https://poloniex.com/spot/BTC_USDT"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="pr-0"
-                      >
-                        <div className="rightarrow-wrapper">
-                          <img src={RightArrow} alt="" />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-3 my-3">
-                  <div className="buylkdcard-wrapper ">
-                    <div className="row m-0 gap-2 justify-content-between align-items-center">
-                      <div className="d-flex gap-2 p-0 align-items-center">
-                        <img alt="" className="buylkdcard-logo" />
-                        <div className="d-flex flex-column gap-1">
-                          <span className="buylkdcard-title">MEXC</span>
-                        </div>
-                      </div>
-                      <a
-                        href="https://www.mexc.com/exchange/LKD_USDT"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="pr-0"
-                      >
-                        <div className="rightarrow-wrapper">
-                          <img src={RightArrow} alt="" />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-3 my-3">
-                  <div className="buylkdcard-wrapper ">
-                    <div className="row m-0 gap-2 justify-content-between align-items-center">
-                      <div className="d-flex gap-2 p-0 align-items-center">
-                        <img alt="" className="buylkdcard-logo" />
-                        <div className="d-flex flex-column gap-1">
-                          <span className="buylkdcard-title">Uniswap V2</span>
-                        </div>
-                      </div>
-                      <a
-                        href="https://app.uniswap.org/#/swap?use=V2&inputCurrency=0x961c8c0b1aad0c0b10a51fef6a867e3091bcef17"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="pr-0"
-                      >
-                        <div className="rightarrow-wrapper">
-                          <img src={RightArrow} alt="" />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-3 my-3">
-                  <div className="buylkdcard-wrapper ">
-                    <div className="row m-0 gap-2 justify-content-between align-items-center">
-                      <div className="d-flex gap-2 p-0 align-items-center">
-                        <img alt="" className="buylkdcard-logo" />
-                        <div className="d-flex flex-column gap-1">
-                          <span className="buylkdcard-title">
-                            PancakeSwap V2
-                          </span>
-                        </div>
-                      </div>
-                      <a
-                        href="https://pancakeswap.finance/swap?inputCurrencty=BNB&outputCurrency=0x961c8c0b1aad0c0b10a51fef6a867e3091bcef17"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="pr-0"
-                      >
-                        <div className="rightarrow-wrapper">
-                          <img src={RightArrow} alt="" />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-3 my-3">
-                  <div className="buylkdcard-wrapper ">
-                    <div className="row m-0 gap-2 justify-content-between align-items-center">
-                      <div className="d-flex gap-2 p-0 align-items-center">
-                        <img
-                          src="/static/media/pangolin.00ec08409f1e129c1c0b.svg"
-                          alt=""
-                          className="buylkdcard-logo"
-                        />
-                        <div className="d-flex flex-column gap-1">
-                          <span className="buylkdcard-title">Pangolin</span>
-                        </div>
-                      </div>
-                      <a
-                        href="https://app.pangolin.exchange/#/swap?&outputCurrency=0x961c8c0b1aad0c0b10a51fef6a867e3091bcef17"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="pr-0"
-                      >
-                        <div className="rightarrow-wrapper">
-                          <img src={RightArrow} alt="" />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-3 my-3">
-                  <div className="buylkdcard-wrapper ">
-                    <div className="row m-0 gap-2 justify-content-between align-items-center">
-                      <div className="d-flex gap-2 p-0 align-items-center">
-                        <img
-                          src="/static/media/coin98.eabe6f76411d9477629b.png"
-                          alt=""
-                          className="buylkdcard-logo"
-                        />
-                        <div className="d-flex flex-column gap-1">
-                          <span className="buylkdcard-title">Coin98</span>
-                        </div>
-                      </div>
-                      <a
-                        href="/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="pr-0"
-                      >
-                        <div className="rightarrow-wrapper">
-                          <img src={RightArrow} alt="" />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-3 my-3">
-                  <div className="buylkdcard-wrapper ">
-                    <div className="row m-0 gap-2 justify-content-between align-items-center">
-                      <div className="d-flex gap-2 p-0 align-items-center">
-                        <img
-                          src="/static/media/1Inch.610f677ebaddb96192de.png"
-                          alt=""
-                          className="buylkdcard-logo"
-                        />
-                        <div className="d-flex flex-column gap-1">
-                          <span className="buylkdcard-title">1inch</span>
-                        </div>
-                      </div>
-                      <a
-                        href="https://app.1inch.io/#/1/swap/LKD/ETH"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="pr-0"
-                      >
-                        <div className="rightarrow-wrapper">
-                          <img src={RightArrow} alt="" />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-3 my-3">
-                  <div className="buylkdcard-wrapper ">
-                    <div className="row m-0 gap-2 justify-content-between align-items-center">
-                      <div className="d-flex gap-2 p-0 align-items-center">
-                        <img src="" alt="" className="buylkdcard-logo" />
-                        <div className="d-flex flex-column gap-1">
-                          <span className="buylkdcard-title">KyberSwap</span>
-                        </div>
-                      </div>
-                      <a
-                        href="https://kyberswap.com/swap/bnb/bnb-to-lkd"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="pr-0"
+                        className="pr-0 mt-3"
                       >
                         <div className="rightarrow-wrapper">
                           <img src={RightArrow} alt="" />
@@ -343,7 +134,9 @@ const BuyLKD = () => {
                             LKD Contract Address :
                           </span>
                           <span className="contractaddr justify-content-center">
-                            0xaF027427DC6d31A3e7e162A710a5Fe27e63E275F
+                            <span className="truncateAdd">
+                              0xaF027427DC6d31A3e7e162A710a5Fe27e63E275F
+                            </span>
                             {copy ? (
                               <span data-toggle="tooltip" title="Copied">
                                 <svg
@@ -387,44 +180,39 @@ const BuyLKD = () => {
                   </div>
                   <div className="row m-0 gap-3 my-5 justify-content-center">
                     <div className="walletitem">
-                      <img
-                        src="/static/media/coinbase.1561ab4c68ea851a11d1.svg"
-                        alt=""
-                        className="walletimg"
-                      />
-                      <span className="wallettitle">Coinbase</span>
+                      <img src={MetaMask} alt="" className="walletimg" />
+                      <span className="wallettitle">MetaMask</span>
+                    </div>
+                    <div className="walletitem">
+                      <img src={TrustWallet} alt="" className="walletimg" />
+                      <span className="wallettitle">Trust Wallet</span>
                     </div>
                     <div className="walletitem">
                       <img
-                        src="/static/media/metamask.c0ff663c4f2c39c234ac.svg"
+                        src={WalletConnect}
                         alt=""
                         className="walletimg"
+                        width={50}
                       />
-                      <span className="wallettitle">Metamask</span>
+                      <span className="wallettitle">WalletConnect</span>
                     </div>
                     <div className="walletitem">
                       <img
-                        src="/static/media/trustwallet.df5d041e8e4d8cd6b753.svg"
+                        src={Autherium}
                         alt=""
                         className="walletimg"
+                        width={35}
                       />
-                      <span className="wallettitle">Trust wallet</span>
+                      <span className="wallettitle">Autherium</span>
                     </div>
                     <div className="walletitem">
                       <img
-                        src="/static/media/coin98.374fe1c0f2421e4a6fd6.svg"
+                        src={BinanceChain}
                         alt=""
                         className="walletimg"
+                        width={50}
                       />
-                      <span className="wallettitle">Coin98</span>
-                    </div>
-                    <div className="walletitem">
-                      <img
-                        src="/static/media/safepal.00d0b3eabe07cbb0ff64.svg"
-                        alt=""
-                        className="walletimg"
-                      />
-                      <span className="wallettitle">SafePal</span>
+                      <span className="wallettitle">Binance Chain</span>
                     </div>
                   </div>
                 </div>

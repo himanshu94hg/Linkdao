@@ -38,9 +38,14 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="col-6 bg-white d-flex justify-content-around align-items-center py-3 links">
-            <Link className="text-decoration-none navlink text fw-bold" to="/">
+            <a
+              className="text-decoration-none navlink text fw-bold"
+              href="https://linkdao-network.gitbook.io/linkdao/introduction/lets-get-started"
+              target="_blank"
+              rel="noreferrer"
+            >
               LKD
-            </Link>
+            </a>
             <a
               className="text-decoration-none navlink fw-bold"
               href="https://linkdao-network.gitbook.io/linkdao"
