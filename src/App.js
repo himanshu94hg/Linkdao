@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "./App.scss";
 import BuyLKD from "./components/BuyLKD";
 import Disclaimer from "./components/Disclaimer";
@@ -10,7 +11,8 @@ import NavMobile from "./components/NavMobile";
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter>
+        {/* <Router> */}
         <Navbar />
         <NavMobile />
         <Routes>
@@ -19,7 +21,8 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
         <Footer />
-      </Router>
+        {/* </Router> */}
+      </HashRouter>
     </>
   );
 }

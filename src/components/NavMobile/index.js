@@ -11,6 +11,10 @@ const NavMobile = () => {
     setOpenMenu(!openMenu);
   };
 
+  /* window.onclick = () => {
+    setOpenMenu(false);
+  }; */
+
   //   document.addEventListener("mousedown", toggleMenu);
 
   return (

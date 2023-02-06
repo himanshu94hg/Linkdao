@@ -109,14 +109,18 @@ const Home = () => {
                   </div>
                   <div
                     className={`sliderwrapper d-flex flex-column ${
-                      window.innerWidth < 768 ? "mt-5" : "mt-3"
+                      window.innerWidth > 991 ? "" : "mt-5"
                     } pl-0`}
                   >
                     {/* <HeroSlider /> */}
                     <IndividualIntervalsExample />
                   </div>
                 </div>
-                <div className="col-12 col-lg-5 d-flex justify-content-center flex-column text-white ml-4">
+                <div
+                  className={`col-12 col-lg-5 d-flex justify-content-center flex-column text-white ml-4 ${
+                    window.innerWidth > 991 ? "" : "mt-5"
+                  }`}
+                >
                   <BannerGraphic />
                 </div>
               </div>

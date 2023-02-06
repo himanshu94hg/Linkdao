@@ -29,7 +29,7 @@ const LKDToken = () => {
             className="text-end aos-init aos-animate"
             data-aos="fade-up"
             data-aos-duration="1000"
-            width="70%"
+            style={{ width: "80%" }}
           >
             Explore the multiple possibilites with our unique token
           </p>

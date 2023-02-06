@@ -100,15 +100,14 @@ h1 {
     opacity: 1;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) {
     .main-hero {
         padding-top: 50px;
 
         .heading {
-            min-height: 854px;
+            min-height: auto;
         }
     }
-
 
 
 

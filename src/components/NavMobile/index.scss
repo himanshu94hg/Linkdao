@@ -34,11 +34,12 @@
         height: 2px !important;
 
         &:first-child {
-            top: 10px !important;
+            top: 7px !important;
         }
 
         &:nth-child(2) {
-            top: 18px !important;
+            top: 17px !important;
+            height: 1px !important;
         }
 
         &:nth-child(3) {
@@ -56,7 +57,7 @@
     border-radius: 0 0 20px 20px;
     position: fixed;
     right: 0;
-    top: 0;
+    top: -15px;
     transform: translateY(-700px);
     -webkit-transform: translateY(-700px);
     transition: all .3s, background 0s;
@@ -106,3 +107,7 @@
     margin: 0;
     width: 100%;
 }
+
+// .mMenu {
+//     height: 100vh;
+// }
