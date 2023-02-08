@@ -1,7 +1,7 @@
 .mobile-navbar {
     background: linear-gradient(121.83deg, #472876 14.64%, #2d1e61 85.55%);
     border-radius: 0 0 14px 0;
-    box-shadow: 0 4px 12px rgb(82 77 209 / 32%);
+    box-shadow: 0 4px 12px rgb(83 255 225 / 32%);
     position: fixed;
     transform: translateY(0);
     -webkit-transform: translateY(0);
@@ -35,15 +35,20 @@
 
         &:first-child {
             top: 7px !important;
+            transform: none !important;
         }
 
         &:nth-child(2) {
             top: 17px !important;
             height: 1px !important;
+            transform: none !important;
+
         }
 
         &:nth-child(3) {
             top: 27px !important;
+            transform: none !important;
+
         }
     }
 }
@@ -60,10 +65,9 @@
     top: -15px;
     transform: translateY(-700px);
     -webkit-transform: translateY(-700px);
-    transition: all .3s, background 0s;
-    -webkit-transition: all .3s, background 0s;
-    transition: all .3s ease-in;
-    -webkit-transition: all .3s ease-in;
+    transition: all 3s ease-in;
+    transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+    // -webkit-transition: all 3s ease-in;
     width: 100%;
     z-index: 22;
 }
