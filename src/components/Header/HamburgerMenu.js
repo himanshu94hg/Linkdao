@@ -12,7 +12,6 @@ const HamburgerMenu = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [show, setShow] = useState(false);
   const [logo, setLogo] = useState(false);
-  const [metaverse, setMetaverse] = useState(false);
 
   const showNavbar = () => {
     if (typeof window !== "undefined") {
@@ -30,8 +29,8 @@ const HamburgerMenu = () => {
     setLastScrollY(window.scrollY);
 
     if (
-      window.location.href.includes("lkd") &&
-      !window.location.href.includes("lkd")
+      window.location.href.includes("dyp") &&
+      !window.location.href.includes("dyp")
     ) {
       if (window.scrollY >= 500) {
         setLogo(true);
@@ -44,7 +43,7 @@ const HamburgerMenu = () => {
       window.location.href.includes("governance") ||
       window.location.href.includes("support") ||
       window.location.href.includes("news") ||
-      window.location.href.includes("buylkd")
+      window.location.href.includes("buydyp")
     ) {
       setLogo(true);
     } else {
@@ -59,15 +58,11 @@ const HamburgerMenu = () => {
   const bgmenu = document.querySelector("#bgmenu");
   const hamburger = document.querySelector("#hamburgermenu");
   const html = document.querySelector("html");
-  const metaverseModalIndicator = document.querySelector(
-    ".metaverse-modal-wrapper"
-  );
 
   useEffect(() => {
-    if (openMenu === true || metaverse === true) {
+    if (openMenu === true) {
       html.classList.add("hidescroll");
       bgmenu.style.pointerEvents = "auto";
-      metaverseModalIndicator.style.pointerEvents = "auto";
       hamburger.style.pointerEvents = "auto";
     } else {
       // Enable scroll
@@ -193,27 +188,6 @@ const HamburgerMenu = () => {
             </div>
           </div>
         </>
-      </OutsideClickHandler>
-      <OutsideClickHandler onOutsideClick={() => setMetaverse(false)}>
-        <div
-          className={`metaverse-modal-wrapper ${
-            metaverse && "metaverse-active"
-          } flex-column p-5 d-flex gap-3 align-items-center justify-content-center`}
-        >
-          <img
-            src="{xMark}"
-            alt=""
-            className="x-mark"
-            onClick={() => setMetaverse(false)}
-          />
-          <img src="{metaverseModal}" alt="" className="metaverse-title" />
-          <img
-            src="{commingSoon}"
-            alt=""
-            width={400}
-            className="comming-soon"
-          />
-        </div>
       </OutsideClickHandler>
     </>
   );
