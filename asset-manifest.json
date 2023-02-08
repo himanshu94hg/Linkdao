@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6e72c948.css",
-    "main.js": "/static/js/main.68063e6e.js",
+    "main.css": "/static/css/main.b5ae8f49.css",
+    "main.js": "/static/js/main.e9f0ad98.js",
     "static/media/BlockSafu.svg": "/static/media/BlockSafu.3f295c0d967c97ab9eb83a6bc1023e0f.svg",
     "static/media/BITMRT.svg": "/static/media/BITMRT.32ca16b9aa37ee7b5ea857edb6f23649.svg",
     "static/media/BLOCKSAFU.svg": "/static/media/BLOCKSAFU.4d7be5d145997fa23f121ac476f0a482.svg",
@@ -66,12 +66,13 @@
     "static/media/Comet5.svg": "/static/media/Comet5.599f5a976b86c1e13322c733ec25b46d.svg",
     "static/media/Copybtn.svg": "/static/media/Copybtn.868634d100eb79549ad402d9865c5c1c.svg",
     "static/media/PlanetShadow.svg": "/static/media/PlanetShadow.39fcedc8b374a650b8cdc96421080e01.svg",
+    "static/media/mobileNavArrow.svg": "/static/media/mobileNavArrow.90ece261065f2b81c984de1b9e824004.svg",
     "static/media/transparent.svg": "/static/media/transparent.806c6be7e02cfb0cf0c339e12ed1a1d8.svg",
-    "main.6e72c948.css.map": "/static/css/main.6e72c948.css.map",
-    "main.68063e6e.js.map": "/static/js/main.68063e6e.js.map"
+    "main.b5ae8f49.css.map": "/static/css/main.b5ae8f49.css.map",
+    "main.e9f0ad98.js.map": "/static/js/main.e9f0ad98.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e72c948.css",
-    "static/js/main.68063e6e.js"
+    "static/css/main.b5ae8f49.css",
+    "static/js/main.e9f0ad98.js"
   ]
 }
